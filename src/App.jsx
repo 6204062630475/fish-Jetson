@@ -2,9 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { Paper, Button } from "@mui/material";
 import axios from "axios";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import DialogContact from "./components/DialogContact";
-import DialogDetected from "./components/DialogDetected";
 import dayjs from "dayjs";
 
 function App() {
