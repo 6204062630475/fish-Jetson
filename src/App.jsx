@@ -95,9 +95,6 @@ function App() {
   }, []);
   return (
     <>
-      {/* <div className="navbar-container">
-        <Navbar />
-      </div> */}
       <div className="PaperWrapper">
         <Paper
           elevation={5}
@@ -164,12 +161,6 @@ function App() {
           )} */}
         </Paper>
       </div>
-      {/* <div style={{ position: "absolute", top: "86%", right: "1%" }}>
-        <DialogDetected />
-      </div> */}
-      {/* <div style={{ position: "absolute", top: "92%", right: "1%" }}>
-        <DialogContact />
-      </div> */}
     </>
   );
 }
