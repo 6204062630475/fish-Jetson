@@ -11,7 +11,6 @@ function App() {
     dayjs().format("YYYY-MM-DD HH:mm:ss")
   );
   const [loading, setLoading] = useState(false);
-  // const [started, setstarted] = useState(false);
 
   const startCamera = async () => {
     try {
@@ -69,12 +68,6 @@ function App() {
     }
   };
 
-  // const handleStartCapture = () => {
-  //   setstarted(true);
-  //   captureFramesAndUpload();
-  //   const interval = setInterval(captureFramesAndUpload, 20000);
-  //   return () => clearInterval(interval);
-  // };
   useEffect(() => {
     startCamera();
   }, []);
@@ -143,22 +136,6 @@ function App() {
           <div className="count-container">
             <h1 className="count-text">จำนวน: {countNumber} ตัว</h1>
           </div>
-
-          {/* {started && (
-            <div className="count-container">
-              <h1 className="count-text">จำนวน: {countNumber} ตัว</h1>
-            </div>
-          )} */}
-          {/* {!started && (
-            <Button
-              onClick={handleStartCapture}
-              variant="contained"
-              size="large"
-              sx={{ marginTop: "1%" }}
-            >
-              เริ่มนับจำนวน
-            </Button>
-          )} */}
         </Paper>
       </div>
     </>
