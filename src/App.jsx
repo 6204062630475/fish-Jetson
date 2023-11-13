@@ -51,7 +51,7 @@ function App() {
 
   const captureFramesAndUpload = async () => {
     setLoading(true);
-    const numFrames = 10;
+    const numFrames = 5;
     const frameArray = [];
     for (let i = 0; i < numFrames; i++) {
       const base64String = captureFrame();
@@ -82,7 +82,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       captureFramesAndUpload();
-    }, 20000);
+    }, 17000);
     return () => clearInterval(interval);
   }, []);
   //นาฬิกา
